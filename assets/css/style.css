@@ -1,12 +1,8 @@
 @charset "utf-8";
 
-body {
-  font-family: PT Sans;
-}
-
 .wrapper {
   background-color: #f2f6f7;
-  padding: 30px 0;
+  padding: 32px 0;
   width: 100%;
 }
 
@@ -20,7 +16,7 @@ body {
   border-radius: 4px;
   border:1px solid #fff;
   box-sizing: border-box;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 4px 0 rgb(0 0 0 / 18%);
   padding: 48px 64px;
 }
 
@@ -28,16 +24,17 @@ body {
 .common {
   background-color: #fbfbfb;
   border: 1px solid #d9d9d9;
-  border-radius: 4px;
+  border-radius: 3px;
   box-sizing: border-box;
   color: #545658;
   font-size: 13px;
-  height: 40px;
+  height: 36px;
   padding: 5px;
-  margin-top: 6px;
+  margin-top: 5px;
   width: 100%;
 }
 
+/*FB,Google,アカウント作成ボタン*/
 .common-btn {
   box-sizing: border-box;
   border-radius: 3px;
@@ -45,8 +42,8 @@ body {
   font-size: 13px;
   font-weight: 500;
   display: inline-block;
-  padding: 13px 0;
-  transition: 0.3s;
+  padding: 13px 0 ;
+  transition: .3s;
   text-align: center;
   width: 100%;
 }
@@ -73,26 +70,27 @@ body {
 }
 
 .link__color {
-  color: #04aaa7;
+  color: #01a6a4;
 }
 
 .link__color:hover {
-  color: #01bfbc;
+  color: #01bfbd;
 }
 
 .flame__line:focus {
-  border: 1px solid #01bfbd;
+  border-color: rgba(59, 133, 133, .4);
   box-shadow: 0 0 0 2px rgb(1 191 189 / 10%);
   background-color: #fff;
   outline: none;
 }
 
 input::placeholder {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 textarea::placeholder {
-  font-size: 14px;
+  font-size: 13px;
+  padding: 5px;
 }
 
 /*タイトル*/
@@ -126,7 +124,8 @@ textarea::placeholder {
 }
 
 .Facebook:hover {
-  background-color: #344d83;
+  background-color: #344e87;
+  border-color: transparent;
 }
 
 .Google {
@@ -142,7 +141,7 @@ textarea::placeholder {
 .start__comments {
   color: #949697;
   font-size: 12px;
-  margin-top: 10px;
+  margin-top: 8px;
   text-align: center;
 }
 
@@ -151,7 +150,7 @@ textarea::placeholder {
   color: #949697;
   display: flex;
   font-size: 12px;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .acounts__info::before,.acounts__info::after {
@@ -176,7 +175,7 @@ textarea::placeholder {
 }
 
 .last__name {
-  margin-left: 20px;
+  margin-left: 16px;
 }
 
 /*性別*/
@@ -212,7 +211,7 @@ textarea::placeholder {
 
 .gender__select label {
   position: relative;
-  padding-left: 22px;
+  padding: 3px 3px 3px 20px;
 }
 
 .gender__select input[type=radio] + label::before {
@@ -224,7 +223,7 @@ textarea::placeholder {
   border-radius: 50%;
   border: 1px solid #ddd;
   left: 0;
-  top: -2px;
+  top: 2px;
 }
 
 .gender__select input[type=radio] + label::after {
@@ -236,7 +235,7 @@ textarea::placeholder {
   border-radius: 50%;
   background-color: #01bfbd;
   left: 4px;
-  top: 2px;
+  top: 6px;
   opacity: 0;
   transition: 0.3s;
 }
@@ -261,7 +260,7 @@ textarea::placeholder {
 .course__select {
   padding-left: 20px;
   position:relative;
-  margin: 15px 20px 0 0;
+  margin: 10px 20px 0 0;
 }
 
 .checkbox__text::before {
@@ -302,7 +301,7 @@ textarea::placeholder {
 
 /*備考*/
 .remarks__input {
-  height: 110px;
+  height: 100px;
   resize: none;
 }
 
@@ -321,6 +320,7 @@ textarea::placeholder {
   border: 1px solid #d9d9d9 ;
   background-color: #fff;
   color: #01a6a4;
+  outline: none;
 }
 
 /*同意*/
@@ -332,12 +332,13 @@ textarea::placeholder {
 .foot {
   font-size: 14px;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 32px;
 }
 
 .mail__check {
   display: inline-block;
-  margin-top: 20px;
+  font-size: 12px;
+  margin-top: 8px;
 }
 
 .link__line {
@@ -346,4 +347,10 @@ textarea::placeholder {
 
 .link__line:hover {
   text-decoration: underline;
+}
+
+.resend__mail {
+  margin-bottom: 8px;
+  line-height: 16px;
+  font-size: 12px;
 }
