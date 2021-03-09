@@ -31,7 +31,7 @@ body {
   border-radius: 4px;
   box-sizing: border-box;
   color: #545658;
-  font-size: 17px;
+  font-size: 13px;
   height: 40px;
   padding: 5px;
   margin-top: 6px;
@@ -45,7 +45,7 @@ body {
   font-size: 13px;
   font-weight: 500;
   display: inline-block;
-  padding: 14px 0;
+  padding: 13px 0;
   transition: 0.3s;
   text-align: center;
   width: 100%;
@@ -82,19 +82,23 @@ body {
 
 .flame__line:focus {
   border: 1px solid #01bfbd;
-  box-shadow: 0px 0px 5px 0px rgba(175,238,238,);
+  box-shadow: 0 0 0 2px rgb(1 191 189 / 10%);
   background-color: #fff;
   outline: none;
 }
 
 input::placeholder {
-  font-size: 16px;
+  font-size: 14px;
+}
+
+textarea::placeholder {
+  font-size: 14px;
 }
 
 /*タイトル*/
 .title {
   color: #545658;
-  font-size: 25px;  
+  font-size: 24px;  
   text-align: center;
 }
 
@@ -105,6 +109,14 @@ input::placeholder {
 
 .start__btn {
   display: flex;
+}
+
+.contents_btn {
+  margin-left: 8px;
+}
+
+.contents_btn:first-child {
+  margin-left: 0;
 }
 
 .Facebook {
@@ -121,11 +133,10 @@ input::placeholder {
   background-color: #fff;
   border: 1px solid #d9d9d9;
   color: #dd4b39;
-  margin-left: 20px;
 }
 
 .Google:hover {
-  background-color: rgb(247, 243, 243);
+  background-color: #f7f7f7;
 }
 
 .start__comments {
@@ -174,9 +185,19 @@ input::placeholder {
   font-size: 15px;
 }
 
+.gender__text {
+  display: block
+}
+
 .gender__type {
   cursor: pointer;
-  margin-top: 10px;
+  color: #545658;
+  font-size: 16px;
+  margin: 10px 0 0 15px;
+}
+
+.gender__type:first-of-type {
+  margin-left: 0;
 }
 
 .input[type=radio] {
@@ -184,13 +205,14 @@ input::placeholder {
 }
 
 /*ラジオボタン*/
+
 .gender__select input[type=radio] {
   display: none;
 }
 
 .gender__select label {
   position: relative;
-  padding-left: 25px;
+  padding-left: 22px;
 }
 
 .gender__select input[type=radio] + label::before {
@@ -202,19 +224,19 @@ input::placeholder {
   border-radius: 50%;
   border: 1px solid #ddd;
   left: 0;
-  top: 0;
+  top: -2px;
 }
 
 .gender__select input[type=radio] + label::after {
   position: absolute;
   content: "";
   display: inline-block;
-  width: 11px;
-  height: 11px;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
   background-color: #01bfbd;
-  left: 3px;
-  top: 3px;
+  left: 4px;
+  top: 2px;
   opacity: 0;
   transition: 0.3s;
 }
@@ -239,10 +261,10 @@ input::placeholder {
 .course__select {
   padding-left: 20px;
   position:relative;
-  margin-right: 20px;
+  margin: 15px 20px 0 0;
 }
 
-.course__select::before {
+.checkbox__text::before {
   border: 1px solid #d9d9d9;
   content: "";
   display: block;
@@ -251,10 +273,6 @@ input::placeholder {
   left: 0;
   width: 15px;
   height: 15px;
-}
-
-.course__select {
-  margin-top: 15px;
 }
 
 .course__select:first-of-type {
@@ -297,6 +315,12 @@ input::placeholder {
 
 .decision__input:hover {
   background-color: #07a8a6;
+}
+
+.decision__input:active {
+  border: 1px solid #d9d9d9 ;
+  background-color: #fff;
+  color: #01a6a4;
 }
 
 /*同意*/
