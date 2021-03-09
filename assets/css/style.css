@@ -1,1 +1,325 @@
 @charset "utf-8";
+
+body {
+  font-family: PT Sans;
+}
+
+.wrapper {
+  background-color: #f2f6f7;
+  padding: 30px 0;
+  width: 100%;
+}
+
+.inner {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 4px;
+  border:1px solid #fff;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  padding: 48px 64px;
+}
+
+/*以下共通クラス*/
+.common {
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #545658;
+  font-size: 17px;
+  height: 40px;
+  padding: 5px;
+  margin-top: 6px;
+  width: 100%;
+}
+
+.common-btn {
+  box-sizing: border-box;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-block;
+  padding: 14px 0;
+  transition: 0.3s;
+  text-align: center;
+  width: 100%;
+}
+
+.full-size {
+  width: 100%;
+}
+
+.half-size {
+  width: 50%;
+}
+
+.head {
+  margin-top: 20px;
+}
+
+.main__text {
+  font-size: 12px;
+  color: #545658;
+}
+
+.sub__text {
+  color: red;
+}
+
+.link__color {
+  color: #04aaa7;
+}
+
+.link__color:hover {
+  color: #01bfbc;
+}
+
+.flame__line:focus {
+  border: 1px solid #01bfbd;
+  box-shadow: 0px 0px 5px 0px rgba(175,238,238,);
+  background-color: #fff;
+  outline: none;
+}
+
+input::placeholder {
+  font-size: 16px;
+}
+
+/*タイトル*/
+.title {
+  color: #545658;
+  font-size: 25px;  
+  text-align: center;
+}
+
+/*FB,Google*/
+.start {
+  margin-top: 24px;
+}
+
+.start__btn {
+  display: flex;
+}
+
+.Facebook {
+  border: 1px solid #3b5999;
+  background-color: #3b5999;
+  color: #fff;
+}
+
+.Facebook:hover {
+  background-color: #344d83;
+}
+
+.Google {
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  color: #dd4b39;
+  margin-left: 20px;
+}
+
+.Google:hover {
+  background-color: rgb(247, 243, 243);
+}
+
+.start__comments {
+  color: #949697;
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.acounts__info {
+  align-items: center;
+  color: #949697;
+  display: flex;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.acounts__info::before,.acounts__info::after {
+  background-color: #ececec;
+  content: "";
+  display: block;
+  flex-grow: 1;
+  height: 1px;
+}
+
+.acounts__info::before {
+  margin-right: 15px;
+}
+
+.acounts__info::after {
+  margin-left: 15px;
+}
+
+/*氏名*/
+.acounts__name {
+  display: flex;
+}
+
+.last__name {
+  margin-left: 20px;
+}
+
+/*性別*/
+.gender__select {
+  display: flex;
+  font-size: 15px;
+}
+
+.gender__type {
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.input[type=radio] {
+  margin-right: 8px;
+}
+
+/*ラジオボタン*/
+.gender__select input[type=radio] {
+  display: none;
+}
+
+.gender__select label {
+  position: relative;
+  padding-left: 25px;
+}
+
+.gender__select input[type=radio] + label::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  left: 0;
+  top: 0;
+}
+
+.gender__select input[type=radio] + label::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #01bfbd;
+  left: 3px;
+  top: 3px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.gender__select input[type=radio]:checked + label::after {
+  opacity: 1;
+}
+
+/*出身地*/
+
+/*Eメール*/
+
+/*電話番号*/
+
+/*パスワード*/
+
+/*希望コース*/
+.checkbox__input {
+  display: none;
+}
+
+.course__select {
+  padding-left: 20px;
+  position:relative;
+  margin-right: 20px;
+}
+
+.course__select::before {
+  border: 1px solid #d9d9d9;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+}
+
+.course__select {
+  margin-top: 15px;
+}
+
+.course__select:first-of-type {
+  margin-top: 5px;
+}
+
+.checkbox__input:checked {
+  color: #01bfbd;
+}
+
+.checkbox__input:checked + .checkbox__text:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #01bfbd;
+  border-right: 3px solid #01bfbd;
+}
+
+.checkbox__text {
+  margin-left: 5px;
+}
+
+/*備考*/
+.remarks__input {
+  height: 110px;
+  resize: none;
+}
+
+/*アカウント作成*/
+.decision__input {
+  background-color: #01bfbd;
+  border: 1px solid #01bfbd ;
+  color: #fff;
+}
+
+.decision__input:hover {
+  background-color: #07a8a6;
+}
+
+/*同意*/
+.agreement {
+  font-size: 14px;
+}
+
+/*その他*/
+.foot {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.mail__check {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.link__line {
+  text-decoration: none;
+}
+
+.link__line:hover {
+  text-decoration: underline;
+}
